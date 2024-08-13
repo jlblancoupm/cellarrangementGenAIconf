@@ -1,86 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generative images of microscopy cell arrangements - UPM, CSIC</title>
+    <title>Generative Images of Microscopy Cell Arrangements - UPM, CSIC</title>
     <link href="https://cdn.jsdelivr.net/npm/[email protected]/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            max-width: 800px;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #003366; /* Dark blue text */
+            margin: 0;
+            padding: 20px;
         }
-        h1, h2, h3 {
-            color: #333;
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #e6f2ff; /* Light blue header */
+            border-bottom: 2px solid #003366; /* Dark blue border */
+            margin-bottom: 40px;
         }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #00509e; /* Medium blue for section titles */
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #004080; /* Darker blue for subheadings */
+        }
+
         a {
-            color: #007BFF;
+            color: #00509e; /* Medium blue for links */
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white; /* White background for content */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366; /* Dark blue footer */
+            color: white;
+            margin-top: 40px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .btn-primary {
+            /*background-color: #00509e; /* Medium blue button */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #92a8bf; /* Dark blue on hover */
+        }
+
+        .logo {
+            max-width: 100%; /* Allow logo to scale to the max size within its container */
+            height: auto;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-wrapper {
+            width: 25%; /* Set wrapper width to 10% of the screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-container {
+            flex-grow: 1;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Generative images of microscopy cell arrangements using AI conditional training</h1>
+        <div class="logo-container">
+            <div class="logo-wrapper">
+                <img src="https://www.upm.es/sfs/Rectorado/Gabinete%20del%20Rector/Logos/UPM/Logotipo/LOGOTIPO%20color%20PNG.png" alt="UPM Logo" class="logo">
+            </div>
+            <div class="title-container">
+                <h1>Generative Images of Microscopy Cell Arrangements using AI Conditional Training</h1>
+            </div>
+            <div class="logo-wrapper">
+                <img src="https://ilvo.vlaanderen.be/uploads/images/EUROqCHARM/CSIC.png" alt="CSIC Logo" class="logo">
+            </div>
+        </div>
         <p><strong>Authors:</strong> J. Rincón-Laguarta, V. Yagüe-Jiménez, J.L. Blanco, I. González</p>
         <p><strong>Affiliations:</strong> Universidad Politécnica de Madrid (UPM), Consejo Superior de Investigaciones Científicas (CSIC)</p>
     </header>
 
-    <section>
-        <h2>Abstract</h2>
-        <p>Advances in artificial intelligence-driven techniques are poised to revolutionize our understanding of cellular biology. Synthetic imaging capabilities elevate the precision and efficiency of analytical methods in cellular microscopy. These advancements have largely benefited cell segmentation, dynamics, and interaction analysis. In contrast, only a limited number of contributions have considered conditional generation. 
+    <div class="content">
+        <section>
+            <h2>Abstract</h2>
+            <p>Advances in artificial intelligence-driven techniques are poised to revolutionize our understanding of cellular biology. Synthetic imaging capabilities elevate the precision and efficiency of analytical methods in cellular microscopy. These advancements have largely benefited cell segmentation, dynamics, and interaction analysis. In contrast, only a limited number of contributions have considered conditional generation.</p>
+            <p>We present an innovative image-to-image translation scheme to generate high-quality cell microscopy images from controlled patterns. Our method accommodates both manual and automated annotated data. It uses a U-Net structure trained on patterns generated from actual cell microscopy images.</p>
+            <p>We evaluated the efficacy of this approach using two distinct datasets, demonstrating its capacity to generate large-scale, high-fidelity cellular images. The proposed methodology has significant potential for data augmentation in machine learning applications and elucidating complex cellular dynamics, including migration patterns and proliferation rates.</p>
+            <p>Our results open the door to high-resolution static and dynamic information analysis on microscopic cellular processes.</p>
+        </section>
 
-We present an innovative image-to-image translation scheme to generate high-quality cell microscopy images from controlled patterns. Our method accommodates both manual and automated annotated data. It uses a U-Net structure trained on patterns generated from actual cell microscopy images. 
+        <section>
+            <h2>Keywords</h2>
+            <p>Generative AI, cell microscopy images, cell arrangements, conditional training.</p>
+        </section>
 
-We evaluated the efficacy of this approach using two distinct datasets, demonstrating its capacity to generate large-scale, high-fidelity cellular images. The proposed methodology has significant potential for data augmentation in machine learning applications and elucidating complex cellular dynamics, including migration patterns and proliferation rates. 
+        <section>
+            <h2>The Proposed Method</h2>
+            <p>Here it is briefly explained.</p>
+        </section>
 
-Our results open the door to high-resolution static and dynamic information analysis on microscopic cellular processes.</p>
-    </section>
+        <section>
+            <h2>Sample Synthetic Images</h2>
+            <img src="https://via.placeholder.com/800x400" class="img-fluid" alt="Sample Synthetic Image">
+            <p>Here it is briefly explained.</p>
+        </section>
 
-    <section>
-        <h2>Keywords</h2>
-        <p>Generative AI, cell microscopy images, cell arrangements, conditional training.</p>
-    </section>
+        <section>
+            <h2>Publication Details</h2>
+            <p>
+                <strong>Conference:</strong> Name of the Conference<br>
+                <strong>Year:</strong> 2024<br>
+                <strong>Location:</strong> Lisbon, Portugal
+            </p>
+        </section>
 
-    <section>
-        <h2>The proposed method</h2>
-        <p>
-            Here it is briefly explained
-        </p>
-    </section>
+        <section>
+            <h2>Download</h2>
+            <p>
+                <a href="link-to-pdf.pdf" target="_blank" class="btn btn-primary btn-lg">Download PDF</a>
+            </p>
+        </section>
 
-    <section>
-        <h2>Sample synthetic images</h2>
-        <p>
-            Here it is briefly explained
-        </p>
-    </section>
-
-    <section>
-        <h2>Publication Details</h2>
-        <p>
-            <strong>Conference:</strong> Name of the Conference<br>
-            <strong>Year:</strong> 2024<br>
-            <strong>Location:</strong> Lisbon, Portugal
-        </p>
-    </section>
-
-    <section>
-        <h2>Download</h2>
-        <p>
-            <a href="link-to-pdf.pdf" target="_blank">Download PDF</a>
-        </p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>For more information, contact <a href="mailto:jl.blancoupm.es">J.L. Blanco</a>.</p>
-    </section>
+        <section>
+            <h2>Contact</h2>
+            <p>For more information, contact <a href="mailto:jl.blancoupm.es">Dr. J.L. Blanco</a>.</p>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Universidad Politécnica de Madrid</p>
@@ -88,4 +174,5 @@ Our results open the door to high-resolution static and dynamic information anal
 
     <script src="https://cdn.jsdelivr.net/npm/[email protected]/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
+
 </html>
